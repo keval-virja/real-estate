@@ -422,15 +422,15 @@
 }
 
 .brand-club-card .card-body {
-    padding: 34px 24px;
+    padding: 14px 24px 34px;
     text-align: center;
 }
 
 .brand-logo-img {
-    height: 60px;
+    height: 100px;
     aspect-ratio: 1;
     object-fit: contain;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .brand-club-card h4 {
