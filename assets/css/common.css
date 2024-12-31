@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+
+a {
+    color: inherit;
+}
+
+.btn {
+    font-size: inherit;
+    font-weight: 700;
+    padding: 11px 32px;
+    border-width: 2px;
+    border-radius: 4px;
+    box-shadow: none !important;
+}
+
+.btn-outline-primary {
+    background-color: #ffffff !important;
+    color: #b72616 !important;
+    border-color: #b72616 !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #b72616 !important;
+    color: #ffffff !important;
+    border-color: #b72616 !important;
+}
+
+.btn-primary {
+    background-color: #b72616 !important;
+    color: #ffffff !important;
+    border-color: #b72616 !important;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff !important;
+    color: #b72616 !important;
+    border-color: #b72616 !important;
+}
+
+.form-control,
+.form-select {
+    font-size: 14px;
+    font-weight: inherit;
+    letter-spacing: 0.02em;
+    color: #181818;
+    padding: 13px 12px;
+    box-shadow: none !important;
+    border-color: #333333;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #b72616;
+}
+
+.form-control::placeholder {
+    color: #4f4f4f;
+}
+
+.form-select {
+    padding-right: 30px;
+    background-position: right 12px center;
+}
+
+[class*="input-icon"] {
+    padding-left: 42px;
+    background-size: 20px;
+    background-position: 12px center;
+    background-repeat: no-repeat;
+}
+
+.input-icon-map-pin-line {
+    background-image: url("../images/icons/map-pin-line.svg");
+}
+
+.section-padding {
+    padding-block: 50px;
+}
+
+.section-heading {
+    font-size: 28px;
+    font-weight: 700;
+    color: #181818;
+    line-height: 140%;
+    margin-bottom: 16px;
+}
+
+.section-desc {
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: 0.02em;
+    color: #181818;
+    margin-bottom: 0;
+}
+
+.section-header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.badge {
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: inherit;
+    line-height: 150%;
+}
+
+.text-bg-danger {
+    background-color: #fff5f6 !important;
+    color: #b72616 !important;
+}
+
+.text-bg-success {
+    background-color: #f9fff5 !important;
+    color: #18720e !important;
+}
+
+.text-bg-info {
+    background-color: #f5f8ff !important;
+    color: #2f54eb !important;
+}

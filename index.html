@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/x-icon">
+
+    <!-- Google FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <header class="primary-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container" data-aos="fade" data-aos-delay="100">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="#" id="offcanvasNavbarLabel">
+                            <img src="assets/images/logo.png" alt="Logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Residential</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Commercial</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-outline-primary" href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-padding hero-section pt-0">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-aos="fade-up">Your Perfect Property, Our Trusted Expertise</h1>
+                <p data-aos="fade-up" data-aos-delay="100">Find your next home, office space, or investment opportunity
+                    with confidence. Over
+                    15 years of
+                    experience in delivering exceptional real estate solutions.</p>
+            </div>
+            <div class="search-box">
+                <form>
+                    <input type="text" class="form-control input-icon-map-pin-line" placeholder="Enter Location"
+                        data-aos="fade" data-aos-delay="100">
+                    <select class="form-select" data-aos="fade" data-aos-delay="150">
+                        <option value="0" disabled selected>Select BHK</option>
+                        <option value="bhk-1">BHK 1</option>
+                        <option value="bhk-2">BHK 2</option>
+                        <option value="bhk-3">BHK 3</option>
+                    </select>
+                    <select class="form-select" data-aos="fade" data-aos-delay="200">
+                        <option value="0" disabled selected>Select Property Type</option>
+                        <option value="shop">Shop</option>
+                        <option value="office">Office</option>
+                        <option value="plot">Plot</option>
+                    </select>
+                    <button class="btn btn-primary" data-aos="fade" data-aos-delay="250">Browse Properties</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding property-type-section">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">Property Options Tailored for You</h2>
+            <div class="row g-4 mb-4">
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card property-type-card">
+                        <div class="card-body">
+                            <img class="property-type-icon" src="assets/images/icons/property-type-1.png"
+                                alt="Property Type Icon">
+                            <h4>Rent</h4>
+                            <p>Flexible Rental Options for Every Need</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card property-type-card">
+                        <div class="card-body">
+                            <img class="property-type-icon" src="assets/images/icons/property-type-2.png"
+                                alt="Property Type Icon">
+                            <h4>Outright</h4>
+                            <p>Find Your Forever Property</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card property-type-card">
+                        <div class="card-body">
+                            <img class="property-type-icon" src="assets/images/icons/property-type-3.png"
+                                alt="Property Type Icon">
+                            <h4>Free Lease</h4>
+                            <p>Zero Rent, Maximum Value</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="section-desc" data-aos="fade-up">Whether you're looking to rent, buy outright, or explore flexible
+                leasing
+                solutions, we offer diverse
+                property options designed to meet your needs. Discover the perfect space for your home or business with
+                our expert guidance and a range of customizable solutions.</p>
+            <div class="d-flex justify-content-center" data-aos="fade-up">
+                <button class="btn btn-primary">Contact Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding properties-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-headings">
+                    <h2 class="section-heading">Explore Top-Rated Properties for Sale and Rent</h2>
+                    <p class="section-desc" data-aos="fade-up" data-aos-delay="100">Browse exclusive listings of homes,
+                        apartments, office
+                        spaces, and
+                        commercial properties. Find
+                        your perfect space with expert guidance today!</p>
+                </div>
+                <button class="btn btn-primary">Schedule a Viewing</button>
+            </div>
+            <div class="swiper properties-slider">
+                <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-slide">
+                        <div class="prop-img">
+                            <img src="assets/images/prop-img-1.png" alt="Property Image">
+                            <span class="badge text-bg-danger">For Rent</span>
+                            <span class="badge price-tag">$500 <span>/ month</span></span>
+                        </div>
+                        <h3>2-Bedroom Apartment in Downtown</h3>
+                        <ul class="prop-info-lists">
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                    237 sq ft
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                    Sleeps 2
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                    1 Single Bed
+                                </p>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-primary">View Details</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="prop-img">
+                            <img src="assets/images/prop-img-2.png" alt="Property Image">
+                            <span class="badge text-bg-success">Commercial Property</span>
+                            <span class="badge price-tag">$3,500 <span>/ month</span></span>
+                        </div>
+                        <h3>Commercial Office Space for Rent in California</h3>
+                        <ul class="prop-info-lists">
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                    1,200 sq ft
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                    Flexible Lease Terms
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                    Prime Location
+                                </p>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-primary">View Details</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="prop-img">
+                            <img src="assets/images/prop-img-3.png" alt="Property Image">
+                            <span class="badge text-bg-info">Pet-friendly</span>
+                            <span class="badge price-tag">$45 K</span>
+                        </div>
+                        <h3>Beautiful Lake House in Miami for Sale</h3>
+                        <ul class="prop-info-lists">
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                    302 sq ft
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                    Sleeps 4
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                    2 Double Bed
+                                </p>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-primary">View Details</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="prop-img">
+                            <img src="assets/images/prop-img-4.png" alt="Property Image">
+                            <span class="badge text-bg-danger">For Rent</span>
+                            <span class="badge price-tag">$350 K</span>
+                        </div>
+                        <h3>King's Villa in Los Angeles for Rent</h3>
+                        <ul class="prop-info-lists">
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                    302 sq ft
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                    Sleeps 4
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                    1 King Bed, 1 Queen Bed
+                                </p>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-primary">View Details</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="prop-img">
+                            <img src="assets/images/prop-img-1.png" alt="Property Image">
+                            <span class="badge text-bg-danger">For Rent</span>
+                            <span class="badge price-tag">$500 <span>/ month</span></span>
+                        </div>
+                        <h3>2-Bedroom Apartment in Downtown</h3>
+                        <ul class="prop-info-lists">
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                    237 sq ft
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                    Sleeps 2
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                    1 Single Bed
+                                </p>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-primary">View Details</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="prop-img">
+                            <img src="assets/images/prop-img-2.png" alt="Property Image">
+                            <span class="badge text-bg-success">Commercial Property</span>
+                            <span class="badge price-tag">$3,500 <span>/ month</span></span>
+                        </div>
+                        <h3>Commercial Office Space for Rent in California</h3>
+                        <ul class="prop-info-lists">
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                    1,200 sq ft
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                    Flexible Lease Terms
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                    Prime Location
+                                </p>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-primary">View Details</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="prop-img">
+                            <img src="assets/images/prop-img-3.png" alt="Property Image">
+                            <span class="badge text-bg-info">Pet-friendly</span>
+                            <span class="badge price-tag">$45 K</span>
+                        </div>
+                        <h3>Beautiful Lake House in Miami for Sale</h3>
+                        <ul class="prop-info-lists">
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                    302 sq ft
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                    Sleeps 4
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                    2 Double Bed
+                                </p>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-primary">View Details</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="prop-img">
+                            <img src="assets/images/prop-img-4.png" alt="Property Image">
+                            <span class="badge text-bg-danger">For Rent</span>
+                            <span class="badge price-tag">$350 K</span>
+                        </div>
+                        <h3>King's Villa in Los Angeles for Rent</h3>
+                        <ul class="prop-info-lists">
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                    302 sq ft
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                    Sleeps 4
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                    1 King Bed, 1 Queen Bed
+                                </p>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding our-services-section">
+        <div class="container">
+            <div class="row gx-5 gy-4 flex-lg-row flex-column-reverse">
+                <div class="col-lg-6">
+                    <ul class="services-info-lists">
+                        <li data-aos="fade" data-aos-delay="100">
+                            <img src="assets/images/icons/office-hours.svg" alt="Icon">
+                            <div>
+                                <h4>Office Hours</h4>
+                                <h5>9 AM - 8 PM: <span>MONDAY - SATURDAY</span></h5>
+                                <h5>10 AM - 4 PM: <span>SUNDAY</span></h5>
+                            </div>
+                        </li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li data-aos="fade" data-aos-delay="150">
+                            <img src="assets/images/icons/security-hours.svg" alt="Icon">
+                            <div>
+                                <h4>Security Hours</h4>
+                                <h5>9 AM - 6 PM: <span>MONDAY - SATURDAY</span></h5>
+                            </div>
+                        </li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li data-aos="fade" data-aos-delay="200">
+                            <p>We are committed to providing you with the best service possible. Our team is
+                                available during the following hours to assist with your stay. Please note that
+                                certain services may be limited outside these hours, but we are always here to help
+                                with any urgent requests.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="services-img" data-aos="fade" data-aos-delay="400">
+                        <img src="assets/images/services-img.png" alt="Services Section Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding connect-section">
+        <div class="container">
+            <div class="row gx-0">
+                <div class="col-lg-6" data-aos="fade">
+                    <img class="connect-img" src="assets/images/connect-img.png" alt="Connect Section Image">
+                </div>
+                <div class="col-lg-6">
+                    <div class="connect-content">
+                        <h2 class="section-heading" data-aos="fade-up" data-aos-delay="100">Let's Make Your Stay
+                            Unforgettable—Connect with Us Today!</h2>
+                        <p class="section-desc" data-aos="fade-up" data-aos-delay="150">Ready to book your apartment or
+                            have a question? We're here to help. Use
+                            the buttons below to request a booking or reach out to us directly. Our team is dedicated to
+                            making your experience exceptional, and we look forward to welcoming you soon.</p>
+                        <h4 data-aos="fade-up" data-aos-delay="200">Secure your spot at our office now.</h4>
+                        <div data-aos="fade-up" data-aos-delay="150">
+                            <button class="btn btn-primary">Contact Us
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding brand-club-section">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">Big Brand Club</h2>
+            <div class="swiper brand-club-slider" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card brand-club-card">
+                            <div class="card-body">
+                                <img class="brand-logo-img" src="assets/images/icons/favicon.png" alt="Branl Logo">
+                                <h4>James Michael</h4>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card brand-club-card">
+                            <div class="card-body">
+                                <img class="brand-logo-img" src="assets/images/icons/favicon.png" alt="Branl Logo">
+                                <h4>James Michael</h4>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card brand-club-card">
+                            <div class="card-body">
+                                <img class="brand-logo-img" src="assets/images/icons/favicon.png" alt="Branl Logo">
+                                <h4>James Michael</h4>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card brand-club-card">
+                            <div class="card-body">
+                                <img class="brand-logo-img" src="assets/images/icons/favicon.png" alt="Branl Logo">
+                                <h4>James Michael</h4>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-sm-5 gy-4 justify-content-lg-between">
+                <div class="col-xl-auto" data-aos="fade-up">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-md-auto col-sm-5" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Company</h3>
+                    <ul class="foot-menu">
+                        <li>
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Residential</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Commercial</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-auto col-sm-5" data-aos="fade-up" data-aos-delay="150">
+                    <h3>Terms and Policies</h3>
+                    <ul class="foot-menu">
+                        <li>
+                            <a href="#" class="nav-link">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Customer Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Refund Policies</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h2>Got questions? Our Friendly Staff Is Here to Help!</h2>
+                    <ul class="foot-contact-info-lists">
+                        <li>
+                            <span>
+                                <img src="assets/images/icons/envelope.svg" alt="Contact Info Icon">
+                            </span>
+                            <div>
+                                <h6>Email us</h6>
+                                <p><a href="mailto:info@realestatecompany.com">info@realestatecompany.com</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/icons/phone-call.svg" alt="Contact Info Icon">
+                            </span>
+                            <div>
+                                <h6>Phone number</h6>
+                                <p><a href="tel:123.456.7890">123.456.7890</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/icons/map-pin-line-red.svg" alt="Contact Info Icon">
+                            </span>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/m5zPgjb4LSPm6L1H8" target="_blank">2250 Park Avenue
+                                        Dr, Giorgia, GA
+                                        12345, United States</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <ul class="social-icon-lists">
+                    <li>
+                        <a href="#"><img src="assets/images/icons/social.svg" alt="Facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/icons/linkdin.svg" alt="Linkdin"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a>
+                    </li>
+                </ul>
+                <p>© Real Estate Company 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
