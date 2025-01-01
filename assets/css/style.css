@@ -13,7 +13,7 @@
 
 .navbar {
     padding-block: 25px;
-    --bs-navbar-toggler-icon-bg: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path stroke="rgba(33, 37, 41, 0.75)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22" style="&%2310; stroke: %23b72616;&%2310;"/></svg>');
+    --bs-navbar-toggler-icon-bg: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path stroke="rgba(33, 37, 41, 0.75)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22" style="&%2310; stroke: %236d4117;&%2310;"/></svg>');
     transition: padding 0.2s;
 }
 
@@ -45,11 +45,11 @@
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
     font-weight: 500;
-    color: #b72616;
+    color: #6d4117;
 }
 
 .nav-link:hover {
-    color: #b72616;
+    color: #6d4117;
 }
 
 .nav-link::after {
@@ -59,7 +59,7 @@
     margin: auto;
     width: 0px;
     height: 2px;
-    background-color: #b72616;
+    background-color: #6d4117;
     transition: width 0.2s;
 }
 
@@ -309,7 +309,7 @@
 /* Services Section CSS */
 .services-info-lists {
     list-style-type: none;
-    background-color: #fff5f6;
+    background-color: #fff8eb;
     border-radius: 16px;
     padding: 32px;
     margin-bottom: 0;
@@ -344,7 +344,7 @@
 .services-info-lists li h5 span {
     font-size: 16px;
     font-weight: 400;
-    color: #b72616;
+    color: #6d4117;
 }
 
 .services-info-lists li p {
@@ -391,7 +391,7 @@
 
 .connect-content {
     padding: 40px;
-    background-color: #fff5f6;
+    background-color: #fff8eb;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -459,7 +459,7 @@
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #b72616;
+    background-color: #6d4117;
 }
 
 /* Footer CSS */
@@ -525,7 +525,7 @@
     width: 42px;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-color: #be1e2d14;
+    background-color: #e8dcc6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -554,12 +554,12 @@
 }
 
 .foot-contact-info-lists li > div p a:hover {
-    color: #b72616;
+    color: #6d4117;
 }
 
 .footer-bottom {
     padding-block: 20px;
-    background-color: #fff5f6;
+    background-color: #fff8eb;
     border-top: 1px solid #be1e2d;
 }
 
@@ -582,7 +582,7 @@
 .social-icon-lists li a {
     width: 44px;
     aspect-ratio: 1;
-    background-color: #b726161a;
+    background-color: #e8dcc6;
     border-radius: 5px;
     padding: 4px;
     display: flex;
@@ -599,12 +599,12 @@
 
 .social-icon-lists li a:hover {
     transform: translateY(-6px);
-    background-color: #b726162f;
+    background-color: #6d401748;
 }
 
 .footer-bottom > .container p {
     font-size: 14px;
     font-weight: 400;
-    color: #b72616;
+    color: #6d4117;
     margin-bottom: 0;
 }
