@@ -56,6 +56,14 @@
     .hero-content p {
         max-width: 580px;
     }
+
+    .page-heading-section {
+        min-height: 230px;
+    }
+
+    .page-heading {
+        font-size: 34px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -93,6 +101,10 @@
     .services-img img {
         position: initial;
     }
+
+    .properties-listing-section .search-box {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -114,6 +126,12 @@
 
     .hero-content p {
         font-size: inherit;
+    }
+
+    .contact-map {
+        position: initial;
+        width: 100%;
+        min-height: 300px;
     }
 }
 

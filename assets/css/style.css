@@ -44,7 +44,6 @@
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    font-weight: 500;
     color: #6d4117;
 }
 
@@ -52,19 +51,47 @@
     color: #6d4117;
 }
 
-.nav-link::after {
+.nav-link::before {
     content: "";
     position: absolute;
     inset: auto 0 4px;
     margin: auto;
     width: 0px;
-    height: 2px;
-    background-color: #6d4117;
+    border-bottom: 2px solid #6d4117;
     transition: width 0.2s;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::before {
     width: calc(100% - 16px);
+}
+
+.dropdown-menu {
+    border-radius: 4px;
+    border-color: #e8e8e8;
+    animation: fade-up 0.2s;
+    padding-block: 3px;
+    box-shadow: 0px 24px 37px 0px #00000026;
+}
+
+@keyframes fade-up {
+    0% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.dropdown-item {
+    color: inherit;
+    font-size: 15px;
+    font-weight: inherit;
+    padding: 5px 16px;
+}
+
+.dropdown-item:hover {
+    color: #6d4117;
+    background-color: #fff8eb;
 }
 
 .offcanvas.offcanvas-start {
@@ -250,7 +277,8 @@
     padding-bottom: 40px;
 }
 
-.properties-slider .swiper-slide:hover .prop-img > img {
+.properties-slider .swiper-slide:hover .prop-img > img,
+.properties-cards > div:hover .prop-img > img {
     transform: scale(1.1);
 }
 
@@ -267,7 +295,8 @@
     font-size: 14px;
 }
 
-.properties-slider .swiper-slide > h3 {
+.properties-slider .swiper-slide > h3,
+.properties-cards > div > h3 {
     font-size: 20px;
     font-weight: 500;
     color: #181818;
@@ -300,7 +329,8 @@
     margin-right: 10px;
 }
 
-.properties-slider .swiper-slide .btn {
+.properties-slider .swiper-slide .btn,
+.properties-cards > div > .btn {
     font-size: 14px;
     width: 100%;
     padding: 8px 26px;
@@ -493,7 +523,7 @@
     width: fit-content;
 }
 
-.foot-menu li a::after {
+.foot-menu li a::before {
     inset: auto 0 -4px;
 }
 
@@ -560,7 +590,7 @@
 .footer-bottom {
     padding-block: 20px;
     background-color: #fff8eb;
-    border-top: 1px solid #be1e2d;
+    border-top: 1px solid #6d4117;
 }
 
 .footer-bottom > .container {
@@ -607,4 +637,52 @@
     font-weight: 400;
     color: #6d4117;
     margin-bottom: 0;
+}
+
+/* Contact Info Section CSS */
+.contact-info-section .property-type-card {
+    height: 100%;
+    min-height: auto;
+}
+
+.contact-info-section .property-type-icon {
+    background-color: #e8dcc6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info-section .property-type-card p {
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: 0.02em;
+    color: #181818;
+    text-transform: none;
+}
+
+.contact-info-section .property-type-card p a {
+    text-decoration: none;
+}
+
+.contact-form {
+    position: relative;
+    background-color: #fff8eb;
+}
+
+.contact-map {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 50%;
+}
+
+/* Properties Listing Section CSS */
+.properties-listing-section .search-box {
+    max-width: none;
+    width: 100%;
+    margin-bottom: 16px;
+    box-shadow: 0px 0px 20px 0px #00000012;
 }

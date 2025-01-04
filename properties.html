@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/x-icon">
+
+    <!-- Google FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <header class="primary-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo-2.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html" id="offcanvasNavbarLabel">
+                            <img src="assets/images/logo-2.png" alt="Logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Residential
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="properties.html">Rent</a></li>
+                                    <li><a class="dropdown-item" href="properties.html">1 BHK</a></li>
+                                    <li><a class="dropdown-item" href="properties.html">2 BHK</a></li>
+                                    <li><a class="dropdown-item" href="properties.html">3 BHK</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Commercial
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="properties.html">Shop</a></li>
+                                    <li><a class="dropdown-item" href="properties.html">Office</a></li>
+                                    <li><a class="dropdown-item" href="properties.html">Plot</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="btn btn-outline-primary" href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-padding pt-0" data-aos="fade">
+        <div class="container">
+            <div class="page-heading-section">
+                <h1 class="page-heading" data-aos="fade-up" data-aos-delay="100">Properties</h1>
+                <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="150">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Properties</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding properties-listing-section">
+        <div class="container">
+            <div class="search-box" data-aos="fade">
+                <form>
+                    <input type="text" class="form-control input-icon-map-pin-line" placeholder="Enter Location"
+                        data-aos="fade" data-aos-delay="100">
+                    <select class="form-select" data-aos="fade" data-aos-delay="150">
+                        <option value="0" disabled selected>Select BHK</option>
+                        <option value="bhk-1">BHK 1</option>
+                        <option value="bhk-2">BHK 2</option>
+                        <option value="bhk-3">BHK 3</option>
+                    </select>
+                    <select class="form-select" data-aos="fade" data-aos-delay="200">
+                        <option value="0" disabled selected>Select Property Type</option>
+                        <option value="shop">Shop</option>
+                        <option value="office">Office</option>
+                        <option value="plot">Plot</option>
+                    </select>
+                    <button class="btn btn-primary" data-aos="fade" data-aos-delay="250">Browse Properties</button>
+                </form>
+            </div>
+            <p>58 Properties</p>
+            <div class="row gy-4 gx-3 mb-5 properties-cards">
+                <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="prop-img">
+                        <img src="assets/images/prop-img-1.png" alt="Property Image">
+                        <span class="badge text-bg-danger">For Rent</span>
+                        <span class="badge price-tag">$500 <span>/ month</span></span>
+                    </div>
+                    <h3>2-Bedroom Apartment in Downtown</h3>
+                    <ul class="prop-info-lists">
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                237 sq ft
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                Sleeps 2
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                1 Single Bed
+                            </p>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-primary">View Details</button>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="50">
+                    <div class="prop-img">
+                        <img src="assets/images/prop-img-2.png" alt="Property Image">
+                        <span class="badge text-bg-success">Commercial Property</span>
+                        <span class="badge price-tag">$3,500 <span>/ month</span></span>
+                    </div>
+                    <h3>Commercial Office Space for Rent in California</h3>
+                    <ul class="prop-info-lists">
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                1,200 sq ft
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                Flexible Lease Terms
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                Prime Location
+                            </p>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-primary">View Details</button>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="prop-img">
+                        <img src="assets/images/prop-img-3.png" alt="Property Image">
+                        <span class="badge text-bg-info">Pet-friendly</span>
+                        <span class="badge price-tag">$45 K</span>
+                    </div>
+                    <h3>Beautiful Lake House in Miami for Sale</h3>
+                    <ul class="prop-info-lists">
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                302 sq ft
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                Sleeps 4
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                2 Double Bed
+                            </p>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-primary">View Details</button>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="150">
+                    <div class="prop-img">
+                        <img src="assets/images/prop-img-4.png" alt="Property Image">
+                        <span class="badge text-bg-danger">For Rent</span>
+                        <span class="badge price-tag">$350 K</span>
+                    </div>
+                    <h3>King's Villa in Los Angeles for Rent</h3>
+                    <ul class="prop-info-lists">
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                302 sq ft
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                Sleeps 4
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                1 King Bed, 1 Queen Bed
+                            </p>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-primary">View Details</button>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="prop-img">
+                        <img src="assets/images/prop-img-1.png" alt="Property Image">
+                        <span class="badge text-bg-danger">For Rent</span>
+                        <span class="badge price-tag">$500 <span>/ month</span></span>
+                    </div>
+                    <h3>2-Bedroom Apartment in Downtown</h3>
+                    <ul class="prop-info-lists">
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                237 sq ft
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                Sleeps 2
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                1 Single Bed
+                            </p>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-primary">View Details</button>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="250">
+                    <div class="prop-img">
+                        <img src="assets/images/prop-img-2.png" alt="Property Image">
+                        <span class="badge text-bg-success">Commercial Property</span>
+                        <span class="badge price-tag">$3,500 <span>/ month</span></span>
+                    </div>
+                    <h3>Commercial Office Space for Rent in California</h3>
+                    <ul class="prop-info-lists">
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                1,200 sq ft
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                Flexible Lease Terms
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                Prime Location
+                            </p>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-primary">View Details</button>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="prop-img">
+                        <img src="assets/images/prop-img-3.png" alt="Property Image">
+                        <span class="badge text-bg-info">Pet-friendly</span>
+                        <span class="badge price-tag">$45 K</span>
+                    </div>
+                    <h3>Beautiful Lake House in Miami for Sale</h3>
+                    <ul class="prop-info-lists">
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                302 sq ft
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                Sleeps 4
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                2 Double Bed
+                            </p>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-primary">View Details</button>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="350">
+                    <div class="prop-img">
+                        <img src="assets/images/prop-img-4.png" alt="Property Image">
+                        <span class="badge text-bg-danger">For Rent</span>
+                        <span class="badge price-tag">$350 K</span>
+                    </div>
+                    <h3>King's Villa in Los Angeles for Rent</h3>
+                    <ul class="prop-info-lists">
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                302 sq ft
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                Sleeps 4
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                1 King Bed, 1 Queen Bed
+                            </p>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-primary">View Details</button>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="javascript: void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M10.6 12.71a1 1 0 0 1 0-1.42l4.59-4.58a1 1 0 0 0 0-1.42 1 1 0 0 0-1.41 0L9.19 9.88a3 3 0 0 0 0 4.24l4.59 4.59a1 1 0 0 0 .7.29 1 1 0 0 0 .71-.29 1 1 0 0 0 0-1.42Z"
+                                        fill="#333333" opacity="1" data-original="#333333"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="javascript: void(0)">1</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0)">2</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0)">3</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0)">4</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0)">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="javascript: void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="m15.4 9.88-4.59-4.59a1 1 0 0 0-1.41 0 1 1 0 0 0 0 1.42l4.6 4.58a1 1 0 0 1 0 1.42l-4.6 4.58a1 1 0 0 0 1.41 1.42l4.59-4.59a3 3 0 0 0 0-4.24Z"
+                                        fill="#333333" opacity="1" data-original="#333333"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-sm-5 gy-4 justify-content-lg-between">
+                <div class="col-xl-auto" data-aos="fade-up">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo-2.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-md-auto col-sm-5" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Company</h3>
+                    <ul class="foot-menu">
+                        <li>
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Residential</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Commercial</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-auto col-sm-5" data-aos="fade-up" data-aos-delay="150">
+                    <h3>Terms and Policies</h3>
+                    <ul class="foot-menu">
+                        <li>
+                            <a href="#" class="nav-link">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Customer Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Refund Policies</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h2>Got questions? Our Friendly Staff Is Here to Help!</h2>
+                    <ul class="foot-contact-info-lists">
+                        <li>
+                            <span>
+                                <img src="assets/images/icons/envelope.svg" alt="Contact Info Icon">
+                            </span>
+                            <div>
+                                <h6>Email us</h6>
+                                <p><a href="mailto:info@realestatecompany.com">info@realestatecompany.com</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/icons/phone-call.svg" alt="Contact Info Icon">
+                            </span>
+                            <div>
+                                <h6>Phone number</h6>
+                                <p><a href="tel:123.456.7890">123.456.7890</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/icons/map-pin-line-red.svg" alt="Contact Info Icon">
+                            </span>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/m5zPgjb4LSPm6L1H8" target="_blank">2250 Park Avenue
+                                        Dr, Giorgia, GA
+                                        12345, United States</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <ul class="social-icon-lists">
+                    <li>
+                        <a href="#"><img src="assets/images/icons/social.svg" alt="Facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/icons/linkdin.svg" alt="Linkdin"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a>
+                    </li>
+                </ul>
+                <p>© Real Estate Company 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
