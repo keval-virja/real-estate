@@ -1,5 +1,5 @@
 // Slider
-var swiper = new Swiper(".properties-slider", {
+var swiper1 = new Swiper(".properties-slider", {
     slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
@@ -19,7 +19,7 @@ var swiper = new Swiper(".properties-slider", {
     },
 });
 
-var swiper = new Swiper(".brand-club-slider", {
+var swiper2 = new Swiper(".brand-club-slider", {
     slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
@@ -36,6 +36,20 @@ var swiper = new Swiper(".brand-club-slider", {
         1200: {
             slidesPerView: 3,
         },
+    },
+});
+
+var swiper3 = new Swiper(".prop-details-thumb-slider", {
+    slidesPerView: 4,
+    spaceBetween: 6,
+    watchSlidesProgress: true,
+});
+
+var swiper4 = new Swiper(".property-details-slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    thumbs: {
+        swiper: swiper3,
     },
 });
 

@@ -686,3 +686,127 @@
     margin-bottom: 16px;
     box-shadow: 0px 0px 20px 0px #00000012;
 }
+
+/* Property Details CSS */
+.property-details-slider {
+    margin-bottom: 10px;
+}
+
+.property-details-slider .swiper-slide > img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/0.56;
+    border-radius: 12px;
+}
+
+.prop-details-thumb-slider .swiper-slide > img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/0.56;
+    border-radius: 6px;
+    opacity: 0.5;
+}
+
+.prop-details-thumb-slider .swiper-slide.swiper-slide-thumb-active > img {
+    opacity: 1;
+}
+
+.prop-details-basic-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.prop-details-info p {
+    font-size: inherit;
+    font-weight: inherit;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.prop-details-basic-info p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.prop-details-info .badge {
+    font-size: 14px;
+}
+
+.prop-details-info .badge.text-bg-danger {
+    background-color: #6d4117 !important;
+    color: #ffffff !important;
+}
+
+.prop-details-info .badge.text-bg-success {
+    background-color: #18720e !important;
+    color: #ffffff !important;
+}
+
+.prop-details-info .badge.text-bg-info {
+    background-color: #2f54eb !important;
+    color: #ffffff !important;
+}
+
+.prop-details-info h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.prop-details-info .price-tag {
+    font-size: 26px;
+    background-color: transparent;
+    color: #333333;
+    padding: 0;
+    margin-bottom: 36px;
+}
+
+.prop-details-info .prop-info-lists {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 36px;
+    max-width: 500px;
+}
+
+.prop-details-info .prop-info-lists li > p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.prop-details-info .prop-info-lists hr {
+    border-right: var(--bs-border-width) solid;
+    border-top: 0;
+    height: 100%;
+    margin: 0;
+}
+
+.prop-details-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.prop-other-info {
+    margin-top: 50px;
+}
+
+.prop-other-info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.prop-other-info p {
+    font-size: inherit;
+    font-weight: inherit;
+    margin-bottom: 14px;
+}

@@ -7,6 +7,10 @@
     .container-xxl {
         max-width: 94%;
     }
+
+    .property-details-slider .swiper-slide > img {
+        aspect-ratio: 1/0.7;
+    }
 }
 
 @media (max-width: 1199.98px) {
@@ -64,6 +68,19 @@
     .page-heading {
         font-size: 34px;
     }
+
+    .prop-details-info h2 {
+        font-size: 30px;
+    }
+
+    .prop-details-thumb-slider .swiper-slide > img {
+        aspect-ratio: 1/0.6;
+    }
+
+    .prop-details-info .price-tag,
+    .prop-details-info .prop-info-lists {
+        margin-bottom: 26px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -104,6 +121,27 @@
 
     .properties-listing-section .search-box {
         margin-top: 0;
+    }
+
+    .prop-details-info h2 {
+        font-size: 26px;
+    }
+
+    .prop-details-info .price-tag {
+        font-size: 24px;
+    }
+
+    .prop-details-info .prop-info-lists {
+        gap: 14px;
+    }
+
+    .prop-details-info .prop-info-lists li > p {
+        font-size: 14px;
+    }
+
+    .property-details-slider .swiper-slide > img,
+    .prop-details-thumb-slider .swiper-slide > img {
+        aspect-ratio: 1/0.56;
     }
 }
 
@@ -229,5 +267,13 @@
 
     .footer-bottom > .container {
         justify-content: center;
+    }
+
+    .prop-details-info .prop-info-lists li > p {
+        font-size: 12px;
+    }
+
+    .prop-details-info h2 {
+        font-size: 24px;
     }
 }

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/x-icon">
+
+    <!-- Google FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <header class="primary-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo-2.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html" id="offcanvasNavbarLabel">
+                            <img src="assets/images/logo-2.png" alt="Logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Residential
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="properties.html">Rent</a></li>
+                                    <li><a class="dropdown-item" href="properties.html">1 BHK</a></li>
+                                    <li><a class="dropdown-item" href="properties.html">2 BHK</a></li>
+                                    <li><a class="dropdown-item" href="properties.html">3 BHK</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Commercial
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="properties.html">Shop</a></li>
+                                    <li><a class="dropdown-item" href="properties.html">Office</a></li>
+                                    <li><a class="dropdown-item" href="properties.html">Plot</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="btn btn-outline-primary" href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-padding pt-0" data-aos="fade">
+        <div class="container">
+            <div class="page-heading-section">
+                <h1 class="page-heading" data-aos="fade-up" data-aos-delay="100">Properties Details</h1>
+                <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="150">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Properties Details</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="swiper property-details-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-1.png" alt="Property Slide Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-2.png" alt="Property Slide Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-3.png" alt="Property Slide Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-4.png" alt="Property Slide Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-1.png" alt="Property Slide Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-2.png" alt="Property Slide Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-3.png" alt="Property Slide Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-4.png" alt="Property Slide Image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div thumbsSlider="" class="swiper prop-details-thumb-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-1.png" alt="Property Slide Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-2.png" alt="Property Slide Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-3.png" alt="Property Slide Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-4.png" alt="Property Slide Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-1.png" alt="Property Slide Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-2.png" alt="Property Slide Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-3.png" alt="Property Slide Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/prop-img-4.png" alt="Property Slide Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="prop-details-info" data-aos="fade-up" data-aos-delay="100">
+                        <div class="prop-details-basic-info">
+                            <span class="badge text-bg-danger">For Rent</span>
+                            <p><img src="assets/images/icons/calendar.svg">June 29, 2022</p>
+                        </div>
+                        <h2>2-Bedroom Apartment in Downtown</h2>
+                        <p class="mb-4"><img src="assets/images/icons/map-pin-line.svg">45 Regent Street, London, UK
+                        </p>
+                        <span class="badge price-tag">$500 <span>/ month</span></span>
+                        <ul class="prop-info-lists">
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sqft.svg" alt="Info Icon">
+                                    1,200 sq ft
+                                </p>
+                            </li>
+                            <li>
+                                <hr>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/sleep.svg" alt="Info Icon">
+                                    Flexible Lease Terms
+                                </p>
+                            </li>
+                            <li>
+                                <hr>
+                            </li>
+                            <li>
+                                <p>
+                                    <img src="assets/images/icons/bed.svg" alt="Info Icon">
+                                    Prime Location
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="prop-details-buttons">
+                            <button class="btn btn-primary">Contact Us</button>
+                            <button class="btn btn-outline-primary">Broucher</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prop-other-info" data-aos="fade-up">
+                <h3>Description</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum.</p>
+                <p><strong>Where does it come from?</strong></p>
+                <ul>
+                    <li>
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution of letters,
+                    </li>
+                    <li>
+                        as opposed to using 'Content here, content here', making it look like readable English. Many
+                        desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                        text,
+                    </li>
+                    <li>
+                        and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+                        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
+                        humour and the like).
+                    </li>
+                </ul>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-sm-5 gy-4 justify-content-lg-between">
+                <div class="col-xl-auto" data-aos="fade-up">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo-2.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-md-auto col-sm-5" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Company</h3>
+                    <ul class="foot-menu">
+                        <li>
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Residential</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Commercial</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-auto col-sm-5" data-aos="fade-up" data-aos-delay="150">
+                    <h3>Terms and Policies</h3>
+                    <ul class="foot-menu">
+                        <li>
+                            <a href="#" class="nav-link">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Customer Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Refund Policies</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h2>Got questions? Our Friendly Staff Is Here to Help!</h2>
+                    <ul class="foot-contact-info-lists">
+                        <li>
+                            <span>
+                                <img src="assets/images/icons/envelope.svg" alt="Contact Info Icon">
+                            </span>
+                            <div>
+                                <h6>Email us</h6>
+                                <p><a href="mailto:info@realestatecompany.com">info@realestatecompany.com</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/icons/phone-call.svg" alt="Contact Info Icon">
+                            </span>
+                            <div>
+                                <h6>Phone number</h6>
+                                <p><a href="tel:123.456.7890">123.456.7890</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/icons/map-pin-line-red.svg" alt="Contact Info Icon">
+                            </span>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/m5zPgjb4LSPm6L1H8" target="_blank">2250 Park Avenue
+                                        Dr, Giorgia, GA
+                                        12345, United States</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <ul class="social-icon-lists">
+                    <li>
+                        <a href="#"><img src="assets/images/icons/social.svg" alt="Facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/icons/linkdin.svg" alt="Linkdin"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a>
+                    </li>
+                </ul>
+                <p>© Real Estate Company 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
