@@ -810,3 +810,62 @@
     font-weight: inherit;
     margin-bottom: 14px;
 }
+
+/* Counter Section CSS */
+.counter-section .section-heading {
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.counter-card h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #181818;
+    margin-bottom: 16px;
+}
+
+.counter-card p {
+    font-size: 15px;
+    color: #333333;
+}
+
+/* FAQ Section CSS */
+.faq-section .section-heading {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.faq-section .accordion {
+    max-width: 900px;
+    margin-inline: auto;
+}
+
+.accordion {
+    --bs-accordion-btn-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>');
+    --bs-accordion-btn-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>');
+}
+
+.accordion-button {
+    box-shadow: none !important;
+    padding: 24px 16px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #6d4117;
+    color: #ffffff;
+}
+
+.accordion-item {
+    border-width: 0 0 1px 0;
+    border-radius: 0 !important;
+}
+
+.accordion-item:first-of-type > .accordion-header .accordion-button {
+    border-radius: 0;
+}
+
+.accordion-item:last-child {
+    border-bottom-width: 0;
+}

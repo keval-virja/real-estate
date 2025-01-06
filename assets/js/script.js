@@ -22,6 +22,11 @@ var swiper1 = new Swiper(".properties-slider", {
 var swiper2 = new Swiper(".brand-club-slider", {
     slidesPerView: 1,
     spaceBetween: 20,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -70,4 +75,25 @@ AOS.init({
     duration: 800,
     easing: "ease",
     once: true,
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    function counter(id, start, end, duration) {
+        let obj = document.getElementById(id),
+            current = start,
+            range = end - start,
+            increment = end > start ? 1 : -1,
+            step = Math.abs(Math.floor(duration / range)),
+            timer = setInterval(() => {
+                current += increment;
+                obj.textContent = current;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, step);
+    }
+    counter("count1", 169900, 170000, 1000);
+    counter("count2", 4400, 4500, 1000);
+    counter("count3", 794, 894, 1000);
+    counter("count4", 2902, 3002, 1000);
 });

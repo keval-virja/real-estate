@@ -276,4 +276,9 @@
     .prop-details-info h2 {
         font-size: 24px;
     }
+
+    .accordion-button {
+        padding: 16px 14px;
+        font-size: 14px;
+    }
 }
