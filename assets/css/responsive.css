@@ -262,10 +262,11 @@
     }
 
     .footer > .container:first-child {
-        padding-block: 40px 60px;
+        padding-block: 40px 40px;
     }
 
     .footer-bottom > .container {
+        flex-direction: column;
         justify-content: center;
     }
 

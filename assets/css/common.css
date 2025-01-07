@@ -86,6 +86,10 @@ a {
     background-image: url("../images/icons/map-pin-line.svg");
 }
 
+section {
+    background-color: #ffffff;
+}
+
 .section-padding {
     padding-block: 50px;
 }
