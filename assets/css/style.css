@@ -451,9 +451,21 @@
     border-radius: 2px;
 }
 
+.brand-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-card-header > svg {
+    width: 40px;
+    height: auto;
+    aspect-ratio: 1;
+}
+
 .brand-club-card .card-body {
     padding: 14px 24px 34px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .brand-logo-img {
