@@ -58,6 +58,31 @@ var swiper4 = new Swiper(".property-details-slider", {
     },
 });
 
+var swiper3 = new Swiper(".review-slider", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1200: {
+            slidesPerView: 2,
+        },
+    },
+});
+
 // Header
 const headerElm = document.querySelector(".primary-header");
 

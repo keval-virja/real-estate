@@ -11,6 +11,10 @@
     .property-details-slider .swiper-slide > img {
         aspect-ratio: 1/0.7;
     }
+
+    .review-img {
+        width: 34%;
+    }
 }
 
 @media (max-width: 1199.98px) {
@@ -81,6 +85,14 @@
     .prop-details-info .prop-info-lists {
         margin-bottom: 26px;
     }
+
+    .review-img {
+        width: 38%;
+    }
+
+    .review-content-footer svg {
+        width: 36px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -142,6 +154,16 @@
     .property-details-slider .swiper-slide > img,
     .prop-details-thumb-slider .swiper-slide > img {
         aspect-ratio: 1/0.56;
+    }
+
+    .review-card .card-body {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .review-img {
+        width: 100%;
+        aspect-ratio: 1/0.7;
     }
 }
 
